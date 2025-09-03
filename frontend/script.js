@@ -1,6 +1,11 @@
 class SyncDashboard {
   constructor() {
-    this.apiBase = window.location.hostname === 'localhost' ? 'http://localhost:3001' : '';
+    // Usa backend local en desarrollo, y backend en Render en producción (ej: Vercel)
+    if (window.location.hostname === 'localhost') {
+      this.apiBase = 'http://localhost:3001';
+    } else {
+      this.apiBase = 'https://sync-dashboard-yzlb.onrender.com';
+    }
     this.charts = {};
     this.currentStatus = 'not_processed';
     this.refreshInterval = null;
