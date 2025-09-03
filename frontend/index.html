@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-sync-alt"></i> Sync Dashboard</h1>
+                <div class="header-actions">
+                    <button id="refreshBtn" class="btn btn-primary">
+                        <i class="fas fa-refresh"></i> Refresh
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="overview">
+                <i class="fas fa-chart-line"></i> Overview
+            </button>
+            <button class="tab-btn" data-tab="records">
+                <i class="fas fa-list"></i> Records
+            </button>
+            <button class="tab-btn" data-tab="metrics">
+                <i class="fas fa-analytics"></i> Metrics
+            </button>
+            <button class="tab-btn" data-tab="queue">
+                <i class="fas fa-tasks"></i> Queue
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <!-- Status Cards -->
+                <div class="status-grid">
+                    <div class="status-card not-processed">
+                        <div class="status-header">
+                            <h3>Not Processed</h3>
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="status-value" id="notProcessedCount">0</div>
+                        <div class="status-change" id="notProcessedChange">-</div>
+                    </div>
+                    
+                    <div class="status-card failed">
+                        <div class="status-header">
+                            <h3>Failed</h3>
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="status-value" id="failedCount">0</div>
+                        <div class="status-change" id="failedChange">-</div>
+                    </div>
+                    
+                    <div class="status-card processed">
+                        <div class="status-header">
+                            <h3>Queue Size</h3>
+                            <i class="fas fa-list-ol"></i>
+                        </div>
+                        <div class="status-value" id="queueSize">0</div>
+                        <div class="status-change" id="queueChange">-</div>
+                    </div>
+                    
+                    <div class="status-card operators">
+                        <div class="status-header">
+                            <h3>Active Operators</h3>
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="status-value" id="operatorCount">0</div>
+                        <div class="status-change" id="operatorChange">-</div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Sync Flow (24h)</h3>
+                        <canvas id="flowChart"></canvas>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h3>Operator Distribution</h3>
+                        <canvas id="operatorChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Records Tab -->
+            <div id="records" class="tab-content">
+                <div class="records-controls">
+                    <div class="btn-group">
+                        <button class="btn btn-outline active" data-status="not_processed">
+                            Not Processed
+                        </button>
+                        <button class="btn btn-outline" data-status="failed">
+                            Failed
+                        </button>
+                        <button class="btn btn-outline" data-status="synced">
+                            Synced
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="records-content">
+                    <div class="records-summary">
+                        <span id="recordsCount">0 records</span>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="records-table" id="recordsTable">
+                            <thead>
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Quantity</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recordsBody">
+                                <!-- Records will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metrics Tab -->
+            <div id="metrics" class="tab-content">
+                <div class="metrics-controls">
+                    <div class="date-range">
+                        <input type="date" id="fromDate" class="form-input">
+                        <span>to</span>
+                        <input type="date" id="toDate" class="form-input">
+                        <button id="applyDateFilter" class="btn btn-primary">Apply</button>
+                        <button id="collectDataBtn" class="btn btn-secondary">
+                            <i class="fas fa-database"></i> Collect Data
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>Total Records Processed</h4>
+                        <div class="metric-value" id="totalRecords">0</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <h4>Average Processing Time</h4>
+                        <div class="metric-value" id="avgProcessingTime">0s</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <h4>Peak Hours</h4>
+                        <div class="metric-value" id="peakHours">-</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <h4>Success Rate</h4>
+                        <div class="metric-value" id="successRate">0%</div>
+                    </div>
+                </div>
+                
+                <div class="chart-container full-width">
+                    <h3>Processing Timeline</h3>
+                    <canvas id="timelineChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Queue Tab -->
+            <div id="queue" class="tab-content">
+                <div class="queue-actions">
+                    <button id="checkQueueBtn" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Check Queue Status
+                    </button>
+                    <button id="clearQueueBtn" class="btn btn-danger" disabled>
+                        <i class="fas fa-trash"></i> Clear Queue
+                    </button>
+                </div>
+                
+                <div class="queue-info" id="queueInfo">
+                    <p>Click "Check Queue Status" to see current queue information.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-sync-alt fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
