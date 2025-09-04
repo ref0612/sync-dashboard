@@ -21293,5 +21293,1348 @@
         "updated_at": "2025-09-03T13:38:53.000-04:00"
       }
     ]
+  },
+  {
+    "timestamp": "2025-09-04T16:01:10.954Z",
+    "status": "not_processed",
+    "count": 5,
+    "totalCount": 5,
+    "operatorCounts": {
+      "Pullman Costa": 2,
+      "Cormar Bus ": 1,
+      "San Andres": 2
+    },
+    "registros": [
+      {
+        "id": 6469584,
+        "travel_name": "Pullman Costa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:10.000-04:00",
+        "operator_reservation_id": 408795,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:10.000-04:00"
+      },
+      {
+        "id": 6469585,
+        "travel_name": "Pullman Costa",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:10.000-04:00",
+        "operator_reservation_id": 408795,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:10.000-04:00"
+      },
+      {
+        "id": 6469580,
+        "travel_name": "Cormar Bus ",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:08.000-04:00",
+        "operator_reservation_id": 53986,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:08.000-04:00"
+      },
+      {
+        "id": 6469582,
+        "travel_name": "San Andres",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-13",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:08.000-04:00",
+        "operator_reservation_id": 42528,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:08.000-04:00"
+      },
+      {
+        "id": 6469583,
+        "travel_name": "San Andres",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-13",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:08.000-04:00",
+        "operator_reservation_id": 42528,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:08.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:01:11.429Z",
+    "status": "failed",
+    "count": 9,
+    "totalCount": 9,
+    "operatorCounts": {
+      "Pullman Bus": 1,
+      "ISUR Bus": 3,
+      "Buses Viateno Costa": 5
+    },
+    "registros": [
+      {
+        "id": 6469379,
+        "travel_name": "Pullman Bus",
+        "action_name": "4-new_record",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T11:59:56.000-04:00",
+        "operator_reservation_id": 53205,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:59:57.000-04:00"
+      },
+      {
+        "id": 6469249,
+        "travel_name": "ISUR Bus",
+        "action_name": "3-status_change",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T11:58:49.000-04:00",
+        "operator_reservation_id": 516843,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:58:51.000-04:00"
+      },
+      {
+        "id": 6468888,
+        "travel_name": "ISUR Bus",
+        "action_name": "10-api_difference",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T11:55:59.000-04:00",
+        "operator_reservation_id": 516046,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:56:02.000-04:00"
+      },
+      {
+        "id": 6468609,
+        "travel_name": "ISUR Bus",
+        "action_name": "10-api_difference",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T11:54:09.000-04:00",
+        "operator_reservation_id": 516801,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:54:14.000-04:00"
+      },
+      {
+        "id": 6468101,
+        "travel_name": "Buses Viateno Costa",
+        "action_name": "4-new_record",
+        "travel_date": "2025-10-03",
+        "source": "Konnect",
+        "created_at": "2025-09-04T11:50:40.000-04:00",
+        "operator_reservation_id": 8140,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:50:43.000-04:00"
+      },
+      {
+        "id": 6468089,
+        "travel_name": "Buses Viateno Costa",
+        "action_name": "4-new_record",
+        "travel_date": "2025-09-27",
+        "source": "Konnect",
+        "created_at": "2025-09-04T11:50:38.000-04:00",
+        "operator_reservation_id": 8135,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:50:43.000-04:00"
+      },
+      {
+        "id": 6468080,
+        "travel_name": "Buses Viateno Costa",
+        "action_name": "4-new_record",
+        "travel_date": "2025-09-23",
+        "source": "Konnect",
+        "created_at": "2025-09-04T11:50:37.000-04:00",
+        "operator_reservation_id": 8131,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:50:43.000-04:00"
+      },
+      {
+        "id": 6468063,
+        "travel_name": "Buses Viateno Costa",
+        "action_name": "4-new_record",
+        "travel_date": "2025-09-17",
+        "source": "Konnect",
+        "created_at": "2025-09-04T11:50:36.000-04:00",
+        "operator_reservation_id": 8126,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:50:42.000-04:00"
+      },
+      {
+        "id": 6468065,
+        "travel_name": "Buses Viateno Costa",
+        "action_name": "4-new_record",
+        "travel_date": "2025-09-18",
+        "source": "Konnect",
+        "created_at": "2025-09-04T11:50:36.000-04:00",
+        "operator_reservation_id": 8127,
+        "status": "failed",
+        "updated_at": "2025-09-04T11:50:42.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:01:19.219Z",
+    "status": "not_processed",
+    "count": 2,
+    "totalCount": 2,
+    "operatorCounts": {
+      "Pullman Bus": 2
+    },
+    "registros": [
+      {
+        "id": 6469598,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:17.000-04:00",
+        "operator_reservation_id": 40923,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:17.000-04:00"
+      },
+      {
+        "id": 6469592,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:15.000-04:00",
+        "operator_reservation_id": 40531,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:15.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:01:20.697Z",
+    "status": "not_processed",
+    "count": 4,
+    "totalCount": 4,
+    "operatorCounts": {
+      "Pullman Costa": 2,
+      "Pullman Bus": 2
+    },
+    "registros": [
+      {
+        "id": 6469603,
+        "travel_name": "Pullman Costa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:20.000-04:00",
+        "operator_reservation_id": 409334,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:20.000-04:00"
+      },
+      {
+        "id": 6469604,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:20.000-04:00",
+        "operator_reservation_id": 40306,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:20.000-04:00"
+      },
+      {
+        "id": 6469605,
+        "travel_name": "Pullman Costa",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:20.000-04:00",
+        "operator_reservation_id": 409334,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:20.000-04:00"
+      },
+      {
+        "id": 6469601,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-08",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:19.000-04:00",
+        "operator_reservation_id": 43304,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:19.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:01:50.916Z",
+    "status": "not_processed",
+    "count": 4,
+    "totalCount": 4,
+    "operatorCounts": {
+      "Pullman Bus": 2,
+      "San Andres": 2
+    },
+    "registros": [
+      {
+        "id": 6469648,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:48.000-04:00",
+        "operator_reservation_id": 40052,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:48.000-04:00"
+      },
+      {
+        "id": 6469649,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:48.000-04:00",
+        "operator_reservation_id": 40052,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:48.000-04:00"
+      },
+      {
+        "id": 6469650,
+        "travel_name": "San Andres",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-03",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:48.000-04:00",
+        "operator_reservation_id": 42218,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:48.000-04:00"
+      },
+      {
+        "id": 6469651,
+        "travel_name": "San Andres",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-03",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:48.000-04:00",
+        "operator_reservation_id": 42218,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:48.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:01:51.428Z",
+    "status": "failed",
+    "count": 1,
+    "totalCount": 10,
+    "operatorCounts": {
+      "Pullman Bus": 1
+    },
+    "registros": [
+      {
+        "id": 6469644,
+        "travel_name": "Pullman Bus",
+        "action_name": "4-new_record",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:46.000-04:00",
+        "operator_reservation_id": 53206,
+        "status": "failed",
+        "updated_at": "2025-09-04T12:01:46.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:02:00.907Z",
+    "status": "not_processed",
+    "count": 2,
+    "totalCount": 2,
+    "operatorCounts": {
+      "Expreso Santa Cruz": 1,
+      "Pullman Bus": 1
+    },
+    "registros": [
+      {
+        "id": 6469666,
+        "travel_name": "Expreso Santa Cruz",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "Konnect",
+        "created_at": "2025-09-04T12:02:00.000-04:00",
+        "operator_reservation_id": 115501,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:00.000-04:00"
+      },
+      {
+        "id": 6469662,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:01:57.000-04:00",
+        "operator_reservation_id": 41269,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:01:57.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:02:20.625Z",
+    "status": "not_processed",
+    "count": 14,
+    "totalCount": 14,
+    "operatorCounts": {
+      "Pullman Bus": 12,
+      "Pullman Tacoha": 2
+    },
+    "registros": [
+      {
+        "id": 6469703,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:19.000-04:00",
+        "operator_reservation_id": 41790,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:19.000-04:00"
+      },
+      {
+        "id": 6469704,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:19.000-04:00",
+        "operator_reservation_id": 41790,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:19.000-04:00"
+      },
+      {
+        "id": 6469697,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:18.000-04:00",
+        "operator_reservation_id": 40037,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:18.000-04:00"
+      },
+      {
+        "id": 6469698,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:18.000-04:00",
+        "operator_reservation_id": 40040,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:18.000-04:00"
+      },
+      {
+        "id": 6469699,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:18.000-04:00",
+        "operator_reservation_id": 40037,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:18.000-04:00"
+      },
+      {
+        "id": 6469700,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:18.000-04:00",
+        "operator_reservation_id": 40040,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:18.000-04:00"
+      },
+      {
+        "id": 6469693,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-15",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:17.000-04:00",
+        "operator_reservation_id": 44467,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:17.000-04:00"
+      },
+      {
+        "id": 6469694,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-15",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:17.000-04:00",
+        "operator_reservation_id": 44467,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:17.000-04:00"
+      },
+      {
+        "id": 6469695,
+        "travel_name": "Pullman Tacoha",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:17.000-04:00",
+        "operator_reservation_id": 62228,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:17.000-04:00"
+      },
+      {
+        "id": 6469696,
+        "travel_name": "Pullman Tacoha",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:17.000-04:00",
+        "operator_reservation_id": 62228,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:17.000-04:00"
+      },
+      {
+        "id": 6469691,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-16",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:16.000-04:00",
+        "operator_reservation_id": 44468,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:16.000-04:00"
+      },
+      {
+        "id": 6469692,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-16",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:16.000-04:00",
+        "operator_reservation_id": 44468,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:16.000-04:00"
+      },
+      {
+        "id": 6469688,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:15.000-04:00",
+        "operator_reservation_id": 43022,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:15.000-04:00"
+      },
+      {
+        "id": 6469689,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:15.000-04:00",
+        "operator_reservation_id": 43022,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:15.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:02:30.899Z",
+    "status": "not_processed",
+    "count": 4,
+    "totalCount": 6,
+    "operatorCounts": {
+      "Pullman Costa": 2,
+      "Santa Rosa": 2
+    },
+    "registros": [
+      {
+        "id": 6469724,
+        "travel_name": "Pullman Costa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:30.000-04:00",
+        "operator_reservation_id": 401336,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:30.000-04:00"
+      },
+      {
+        "id": 6469725,
+        "travel_name": "Pullman Costa",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:30.000-04:00",
+        "operator_reservation_id": 401336,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:30.000-04:00"
+      },
+      {
+        "id": 6469726,
+        "travel_name": "Santa Rosa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:30.000-04:00",
+        "operator_reservation_id": 26209,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:30.000-04:00"
+      },
+      {
+        "id": 6469722,
+        "travel_name": "Santa Rosa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:29.000-04:00",
+        "operator_reservation_id": 25909,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:29.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:02:43.832Z",
+    "status": "not_processed",
+    "count": 5,
+    "totalCount": 5,
+    "operatorCounts": {
+      "Buses Ivergrama": 1,
+      "Pullman Bus": 3,
+      "San Andres": 1
+    },
+    "registros": [
+      {
+        "id": 6469752,
+        "travel_name": "Buses Ivergrama",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-21",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:43.000-04:00",
+        "operator_reservation_id": 31424,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:43.000-04:00"
+      },
+      {
+        "id": 6469754,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:43.000-04:00",
+        "operator_reservation_id": 45231,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:43.000-04:00"
+      },
+      {
+        "id": 6469755,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:43.000-04:00",
+        "operator_reservation_id": 45231,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:43.000-04:00"
+      },
+      {
+        "id": 6469745,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:41.000-04:00",
+        "operator_reservation_id": 40329,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:41.000-04:00"
+      },
+      {
+        "id": 6469748,
+        "travel_name": "San Andres",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-22",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:41.000-04:00",
+        "operator_reservation_id": 42875,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:41.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:02:50.840Z",
+    "status": "not_processed",
+    "count": 6,
+    "totalCount": 7,
+    "operatorCounts": {
+      "Pullman Bus": 6
+    },
+    "registros": [
+      {
+        "id": 6469768,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-23",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:49.000-04:00",
+        "operator_reservation_id": 46168,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:49.000-04:00"
+      },
+      {
+        "id": 6469769,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-23",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:49.000-04:00",
+        "operator_reservation_id": 46168,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:49.000-04:00"
+      },
+      {
+        "id": 6469770,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:49.000-04:00",
+        "operator_reservation_id": 40025,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:49.000-04:00"
+      },
+      {
+        "id": 6469771,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:49.000-04:00",
+        "operator_reservation_id": 40025,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:49.000-04:00"
+      },
+      {
+        "id": 6469762,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:45.000-04:00",
+        "operator_reservation_id": 40321,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:45.000-04:00"
+      },
+      {
+        "id": 6469763,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:45.000-04:00",
+        "operator_reservation_id": 40321,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:45.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:03:00.703Z",
+    "status": "not_processed",
+    "count": 6,
+    "totalCount": 6,
+    "operatorCounts": {
+      "Pullman Bus": 5,
+      "Pullman Tacoha": 1
+    },
+    "registros": [
+      {
+        "id": 6469796,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:00.000-04:00",
+        "operator_reservation_id": 43090,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:00.000-04:00"
+      },
+      {
+        "id": 6469797,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-09",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:00.000-04:00",
+        "operator_reservation_id": 43090,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:00.000-04:00"
+      },
+      {
+        "id": 6469785,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:56.000-04:00",
+        "operator_reservation_id": 40540,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:56.000-04:00"
+      },
+      {
+        "id": 6469786,
+        "travel_name": "Pullman Tacoha",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "Konnect",
+        "created_at": "2025-09-04T12:02:56.000-04:00",
+        "operator_reservation_id": 62054,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:56.000-04:00"
+      },
+      {
+        "id": 6469788,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:56.000-04:00",
+        "operator_reservation_id": 40923,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:56.000-04:00"
+      },
+      {
+        "id": 6469782,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:02:55.000-04:00",
+        "operator_reservation_id": 49981,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:02:55.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:03:10.854Z",
+    "status": "not_processed",
+    "count": 4,
+    "totalCount": 4,
+    "operatorCounts": {
+      "Pullman Costa": 2,
+      "Pullman Bus": 1,
+      "Buses SANTA JUANA": 1
+    },
+    "registros": [
+      {
+        "id": 6469823,
+        "travel_name": "Pullman Costa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:10.000-04:00",
+        "operator_reservation_id": 400154,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:10.000-04:00"
+      },
+      {
+        "id": 6469824,
+        "travel_name": "Pullman Costa",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:10.000-04:00",
+        "operator_reservation_id": 400154,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:10.000-04:00"
+      },
+      {
+        "id": 6469820,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:09.000-04:00",
+        "operator_reservation_id": 40329,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:10.000-04:00"
+      },
+      {
+        "id": 6469822,
+        "travel_name": "Buses SANTA JUANA",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:09.000-04:00",
+        "operator_reservation_id": 47341,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:09.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:03:20.755Z",
+    "status": "not_processed",
+    "count": 2,
+    "totalCount": 2,
+    "operatorCounts": {
+      "Pullman Bus": 1,
+      "San Andres": 1
+    },
+    "registros": [
+      {
+        "id": 6469834,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-12",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:18.000-04:00",
+        "operator_reservation_id": 43826,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:18.000-04:00"
+      },
+      {
+        "id": 6469831,
+        "travel_name": "San Andres",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:16.000-04:00",
+        "operator_reservation_id": 43597,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:16.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:03:30.891Z",
+    "status": "not_processed",
+    "count": 8,
+    "totalCount": 8,
+    "operatorCounts": {
+      "Pullman Bus": 4,
+      "Casther": 1,
+      "Buses Linatal TS": 1,
+      "Buses Jeldres": 1,
+      "Pullman Fernández": 1
+    },
+    "registros": [
+      {
+        "id": 6469860,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:30.000-04:00",
+        "operator_reservation_id": 40232,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:30.000-04:00"
+      },
+      {
+        "id": 6469861,
+        "travel_name": "Casther",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "Konnect",
+        "created_at": "2025-09-04T12:03:30.000-04:00",
+        "operator_reservation_id": 21905,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:30.000-04:00"
+      },
+      {
+        "id": 6469856,
+        "travel_name": "Buses Linatal TS",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "Konnect",
+        "created_at": "2025-09-04T12:03:29.000-04:00",
+        "operator_reservation_id": 26643,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:29.000-04:00"
+      },
+      {
+        "id": 6469859,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:29.000-04:00",
+        "operator_reservation_id": 40232,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:29.000-04:00"
+      },
+      {
+        "id": 6469854,
+        "travel_name": "Buses Jeldres",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:28.000-04:00",
+        "operator_reservation_id": 9361,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:28.000-04:00"
+      },
+      {
+        "id": 6469847,
+        "travel_name": "Pullman Fernández",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:27.000-04:00",
+        "operator_reservation_id": 450,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:27.000-04:00"
+      },
+      {
+        "id": 6469849,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:27.000-04:00",
+        "operator_reservation_id": 40019,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:27.000-04:00"
+      },
+      {
+        "id": 6469852,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:27.000-04:00",
+        "operator_reservation_id": 40019,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:27.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:03:40.902Z",
+    "status": "not_processed",
+    "count": 5,
+    "totalCount": 5,
+    "operatorCounts": {
+      "Pullman Bus": 5
+    },
+    "registros": [
+      {
+        "id": 6469876,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:39.000-04:00",
+        "operator_reservation_id": 40171,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:39.000-04:00"
+      },
+      {
+        "id": 6469877,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:39.000-04:00",
+        "operator_reservation_id": 40171,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:39.000-04:00"
+      },
+      {
+        "id": 6469874,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:38.000-04:00",
+        "operator_reservation_id": 40477,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:38.000-04:00"
+      },
+      {
+        "id": 6469875,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:38.000-04:00",
+        "operator_reservation_id": 40477,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:38.000-04:00"
+      },
+      {
+        "id": 6469869,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-08",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:33.000-04:00",
+        "operator_reservation_id": 42780,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:33.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:03:43.355Z",
+    "status": "not_processed",
+    "count": 2,
+    "totalCount": 3,
+    "operatorCounts": {
+      "Pullman Bus": 2
+    },
+    "registros": [
+      {
+        "id": 6469878,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-06",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:41.000-04:00",
+        "operator_reservation_id": 40190,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:41.000-04:00"
+      },
+      {
+        "id": 6469879,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-06",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:41.000-04:00",
+        "operator_reservation_id": 40190,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:41.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:04:00.800Z",
+    "status": "not_processed",
+    "count": 8,
+    "totalCount": 8,
+    "operatorCounts": {
+      "Santa Rosa": 1,
+      "Pullman Bus": 5,
+      "San Andres": 2
+    },
+    "registros": [
+      {
+        "id": 6469909,
+        "travel_name": "Santa Rosa",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-05",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:58.000-04:00",
+        "operator_reservation_id": 26149,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:58.000-04:00"
+      },
+      {
+        "id": 6469905,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:56.000-04:00",
+        "operator_reservation_id": 40040,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:56.000-04:00"
+      },
+      {
+        "id": 6469906,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:56.000-04:00",
+        "operator_reservation_id": 40040,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:56.000-04:00"
+      },
+      {
+        "id": 6469903,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:54.000-04:00",
+        "operator_reservation_id": 40002,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:54.000-04:00"
+      },
+      {
+        "id": 6469904,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:54.000-04:00",
+        "operator_reservation_id": 40002,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:54.000-04:00"
+      },
+      {
+        "id": 6469897,
+        "travel_name": "San Andres",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-06",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:53.000-04:00",
+        "operator_reservation_id": 42335,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:53.000-04:00"
+      },
+      {
+        "id": 6469898,
+        "travel_name": "San Andres",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-06",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:53.000-04:00",
+        "operator_reservation_id": 42335,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:53.000-04:00"
+      },
+      {
+        "id": 6469899,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:03:53.000-04:00",
+        "operator_reservation_id": 40143,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:03:53.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:04:10.846Z",
+    "status": "not_processed",
+    "count": 2,
+    "totalCount": 2,
+    "operatorCounts": {
+      "Pullman Bus": 1,
+      "Cormar Bus ": 1
+    },
+    "registros": [
+      {
+        "id": 6469922,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:09.000-04:00",
+        "operator_reservation_id": 40336,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:09.000-04:00"
+      },
+      {
+        "id": 6469920,
+        "travel_name": "Cormar Bus ",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:08.000-04:00",
+        "operator_reservation_id": 52251,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:08.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:04:30.732Z",
+    "status": "not_processed",
+    "count": 4,
+    "totalCount": 4,
+    "operatorCounts": {
+      "Buses Ivergrama": 2,
+      "Pullman Bus": 2
+    },
+    "registros": [
+      {
+        "id": 6469944,
+        "travel_name": "Buses Ivergrama",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:29.000-04:00",
+        "operator_reservation_id": 31140,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:29.000-04:00"
+      },
+      {
+        "id": 6469945,
+        "travel_name": "Buses Ivergrama",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-04",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:29.000-04:00",
+        "operator_reservation_id": 31140,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:29.000-04:00"
+      },
+      {
+        "id": 6469941,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-06",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:27.000-04:00",
+        "operator_reservation_id": 40183,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:27.000-04:00"
+      },
+      {
+        "id": 6469943,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-06",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:27.000-04:00",
+        "operator_reservation_id": 40183,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:27.000-04:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-04T16:04:40.924Z",
+    "status": "not_processed",
+    "count": 2,
+    "totalCount": 2,
+    "operatorCounts": {
+      "Pullman Bus": 2
+    },
+    "registros": [
+      {
+        "id": 6469963,
+        "travel_name": "Pullman Bus",
+        "action_name": "1-fare_change",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:39.000-04:00",
+        "operator_reservation_id": 40255,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:39.000-04:00"
+      },
+      {
+        "id": 6469964,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2025-09-07",
+        "source": "TS",
+        "created_at": "2025-09-04T12:04:39.000-04:00",
+        "operator_reservation_id": 40255,
+        "status": "not_processed",
+        "updated_at": "2025-09-04T12:04:39.000-04:00"
+      }
+    ]
   }
 ]

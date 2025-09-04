@@ -171,7 +171,7 @@ class SyncDashboard {
     
     const ctx = canvas.getContext('2d');
 
-    // Prepare data for the last 24 hours
+    // Prepare data for the last 24 hours (Chile local time)
     const now = new Date();
     const labels = [];
     const notProcessedData = [];
@@ -179,22 +179,33 @@ class SyncDashboard {
 
     // Group data by hour for the last 24 hours
     const hourlyData = {};
-    
-    // Initialize last 24 hours
+
+    // Inicializa las últimas 24 horas usando la zona horaria de Chile
     for (let i = 23; i >= 0; i--) {
       const time = new Date(now.getTime() - i * 60 * 60 * 1000);
-      const hour = time.getHours();
-      const key = `${time.toDateString()} ${hour.toString().padStart(2, '0')}:00`;
+      const chileDate = new Date(time.toLocaleString('en-US', { timeZone: 'America/Santiago' }));
+      const year = chileDate.getFullYear();
+      const month = (chileDate.getMonth() + 1).toString().padStart(2, '0');
+      const day = chileDate.getDate().toString().padStart(2, '0');
+      const hour = chileDate.getHours().toString().padStart(2, '0');
+      const key = `${year}-${month}-${day} ${hour}:00`;
       hourlyData[key] = { not_processed: 0, failed: 0 };
-      labels.push(`${hour.toString().padStart(2, '0')}:00`);
+      labels.push(`${hour}:00`);
     }
 
-    // Fill with actual data
+    // Depuración: muestra los datos recibidos
+    console.log('Datos históricos recibidos para flowchart:', data);
+
+    // Llena con los datos reales
     data.forEach(entry => {
-      const date = new Date(entry.timestamp);
-      const hour = date.getHours();
-      const key = `${date.toDateString()} ${hour.toString().padStart(2, '0')}:00`;
-      
+      // Convierte el timestamp a hora local de Chile
+      const chileDate = new Date(new Date(entry.timestamp).toLocaleString('en-US', { timeZone: 'America/Santiago' }));
+      const year = chileDate.getFullYear();
+      const month = (chileDate.getMonth() + 1).toString().padStart(2, '0');
+      const day = chileDate.getDate().toString().padStart(2, '0');
+      const hour = chileDate.getHours().toString().padStart(2, '0');
+      const key = `${year}-${month}-${day} ${hour}:00`;
+
       if (hourlyData[key]) {
         if (entry.status === 'not_processed') {
           hourlyData[key].not_processed += entry.count;
@@ -203,6 +214,9 @@ class SyncDashboard {
         }
       }
     });
+
+    // Depuración: muestra cómo quedó el agrupamiento
+    console.log('hourlyData agrupado para flowchart:', hourlyData);
 
     // Convert to arrays
     const sortedKeys = Object.keys(hourlyData).sort();
