@@ -22,7 +22,16 @@ class SyncDashboard {
   setupEventListeners() {
     // Tab navigation
     document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => this.switchTab(e.target.dataset.tab));
+      // Deshabilita la pestaña metrics para que no sea clickeable
+      if (btn.dataset.tab === 'metrics') {
+        btn.classList.add('disabled');
+        btn.removeAttribute('data-tab');
+        btn.style.pointerEvents = 'none';
+        btn.style.opacity = '0.6';
+        btn.textContent = 'Metrics';
+      } else {
+        btn.addEventListener('click', (e) => this.switchTab(e.target.dataset.tab));
+      }
     });
 
     // Refresh button
@@ -70,9 +79,9 @@ class SyncDashboard {
       case 'records':
         this.loadRecords(this.currentStatus);
         break;
-      case 'metrics':
-        this.loadMetrics();
-        break;
+      // case 'metrics':
+      //   this.loadMetrics();
+      //   break;
       case 'queue':
         // Queue info loads on demand
         break;
@@ -586,6 +595,7 @@ class SyncDashboard {
   }
 
   async loadMetrics() {
+    /*
     try {
       this.showLoading(true);
       const fromDate = document.getElementById('fromDate').value;
@@ -605,7 +615,31 @@ class SyncDashboard {
       
       const data = await response.json();
 
-      this.updateMetricsDisplay(data.summary);
+      // Calcular el total de IDs únicos procesados usando todos los registros históricos
+      const allIds = new Set();
+      let minDate = null;
+      let maxDate = null;
+      data.metrics.forEach(entry => {
+        if (entry.registros && Array.isArray(entry.registros)) {
+          entry.registros.forEach(r => {
+            allIds.add(r.id);
+            const d = new Date(r.created_at || r.timestamp);
+            if (!minDate || d < minDate) minDate = d;
+            if (!maxDate || d > maxDate) maxDate = d;
+          });
+        }
+        if (entry.id) {
+          allIds.add(entry.id);
+          const d = new Date(entry.created_at || entry.timestamp);
+          if (!minDate || d < minDate) minDate = d;
+          if (!maxDate || d > maxDate) maxDate = d;
+        }
+      });
+      // Log para depurar el rango de fechas
+      console.log('Rango de fechas en métricas:', minDate, maxDate);
+      // Clonar el summary y actualizar el totalRecords
+      const summary = { ...data.summary, totalRecords: allIds.size };
+      this.updateMetricsDisplay(summary);
       this.updateTimelineChart(data.metrics);
     } catch (error) {
       console.error('Error loading metrics:', error);
@@ -613,9 +647,11 @@ class SyncDashboard {
     } finally {
       this.showLoading(false);
     }
+    */
   }
 
   updateMetricsDisplay(summary) {
+    /*
     document.getElementById('totalRecords').textContent = summary.totalRecords || 0;
     document.getElementById('avgProcessingTime').textContent = `${summary.averageProcessingTime || 0}s`;
     
@@ -635,9 +671,11 @@ class SyncDashboard {
     } else {
       document.getElementById('peakHours').textContent = 'No data available';
     }
+    */
   }
 
   updateTimelineChart(metrics) {
+    /*
     const canvas = document.getElementById('timelineChart');
     if (!canvas) return;
 
@@ -715,10 +753,11 @@ class SyncDashboard {
         }
       }
     });
+    */
   }
 
   applyDateFilter() {
-    this.loadMetrics();
+  // this.loadMetrics();
   }
 
   async collectData() {
