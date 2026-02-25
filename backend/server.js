@@ -23,9 +23,19 @@ if (!fs.existsSync(DATA_DIR)) {
 const API_BASE = 'https://gds.kupos.com/api/v2/konnect_gds_sync';
 const HEADERS = {
   'Content-Type': 'application/json',
-  'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE3NTYxNTMyOTIsImV4cCI6MTc3MTkzMTc2OCwianRpIjoiZTRhMWI4YmEtNjZjOC00N2Q1LWIyOWQtNWQ3ZWYxNmNjYTJhIn0.MFXifUXdvxIWNhGE3tpO8bARU2tJEAGvW_OOmZY2svQ',
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-  'Accept': 'application/json, text/plain, */*'
+  'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjkiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE3NzIwNDkzNzQsImV4cCI6MTc4NzgyNzg1MCwianRpIjoiMWIyMjNjNmQtZjVlOC00YjFhLTgzNWMtOGNkMjhhNjRhNDZjIn0.ifXpBVLdTOuZY3erXkLzaD5zcGHunmv5XLic7t0HaoM',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
+  'Accept': 'application/json, text/plain, */*',
+  'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8,gl;q=0.7',
+  'Origin': 'https://gdsdashboard.kupos.com',
+  'Referer': 'https://gdsdashboard.kupos.com/',
+  'Sec-CH-UA': '"Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144"',
+  'Sec-CH-UA-Mobile': '?0',
+  'Sec-CH-UA-Platform': 'Windows',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'same-site',
+  'Priority': 'u=1, i'
 };
 
 // Middleware

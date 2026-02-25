@@ -29021,5 +29021,72 @@
         "updated_at": "2025-09-04T12:46:17.000-04:00"
       }
     ]
+  },
+  {
+    "timestamp": "2026-02-25T19:58:00.543Z",
+    "status": "not_processed",
+    "count": 3,
+    "totalCount": 3,
+    "operatorCounts": {
+      "Pullman Bus": 2,
+      "Cormar Bus ": 1
+    },
+    "registros": [
+      {
+        "id": 30265005,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_ticket",
+        "travel_date": "2026-02-25",
+        "source": "Konnect",
+        "created_at": "2026-02-25T16:58:00.000-03:00",
+        "operator_reservation_id": 86203,
+        "status": "not_processed",
+        "updated_at": "2026-02-25T16:58:00.000-03:00"
+      },
+      {
+        "id": 30265004,
+        "travel_name": "Pullman Bus",
+        "action_name": "process_or_reservation",
+        "travel_date": "2026-02-25",
+        "source": "Konnect",
+        "created_at": "2026-02-25T16:57:59.000-03:00",
+        "operator_reservation_id": 87155,
+        "status": "not_processed",
+        "updated_at": "2026-02-25T16:57:59.000-03:00"
+      },
+      {
+        "id": 30265000,
+        "travel_name": "Cormar Bus ",
+        "action_name": "process_or_reservation",
+        "travel_date": "2026-03-05",
+        "source": "TS",
+        "created_at": "2026-02-25T16:57:57.000-03:00",
+        "operator_reservation_id": 62157,
+        "status": "not_processed",
+        "updated_at": "2026-02-25T16:57:57.000-03:00"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-25T19:58:00.999Z",
+    "status": "failed",
+    "count": 1,
+    "totalCount": 1,
+    "operatorCounts": {
+      "Buses Jeldres": 1
+    },
+    "registros": [
+      {
+        "id": 30263634,
+        "travel_name": "Buses Jeldres",
+        "action_name": "process_or_reservation",
+        "travel_date": "2026-02-26",
+        "source": "Konnect",
+        "created_at": "2026-02-25T16:48:00.000-03:00",
+        "operator_reservation_id": 15392,
+        "status": "failed",
+        "updated_at": "2026-02-25T16:50:49.000-03:00"
+      }
+    ]
   }
 ]
